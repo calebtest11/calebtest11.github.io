@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p id="hi"></p>
+		
+		<button onclick="myFunction()">remove identifiers</button>
+		
+		<script>
+		function myFunction(){
+			let text = "Number  number  Number22  _number 2  2number  number_22"; 
+			var patt1=/[a-z]*/ig
+			var patt2=/[1-9][0-9]*/g
+			let result = text.match(patt1).join(' ');
+			document.getElementById("hi").innerHTML = result;
+		}
+		</script>
+
+	</body>
+</html>
